@@ -5,4 +5,11 @@
         "http://struts.apache.org/dtds/struts-2.5.dtd">
 
 <struts>
+    <package name="com.banana.action" namespace="/" extends="struts-default">
+        <action name="helloworld" class="com.banana.action.HelloWorldAction">
+            <result>/result.jsp</result>
+        </action>
+    </package>
+    <!--<package name="com.banana.action"></package>-->
+
 </struts>
