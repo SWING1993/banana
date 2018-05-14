@@ -9,5 +9,8 @@
         <module name="banana" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="banana" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
