@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="banana-manager-web:war">
+    <output-path>$PROJECT_DIR$/banana-manager/banana-manager-web/target</output-path>
+    <root id="archive" name="banana-manager-web.war">
+      <element id="artifact" artifact-name="banana-manager-web:war exploded" />
+    </root>
+  </artifact>
+</component>
