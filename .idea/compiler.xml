@@ -6,20 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="banana-manager-service" />
-        <module name="banana-manager-web" />
-        <module name="bananamanagermapper" />
-        <module name="bananamanagerpojo" />
+        <module name="banana" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="banana-common" target="1.7" />
-      <module name="banana-manager" target="1.7" />
-      <module name="banana-manager-service" target="1.7" />
-      <module name="banana-manager-web" target="1.7" />
-      <module name="banana-parent" target="1.7" />
-      <module name="bananamanagermapper" target="1.7" />
-      <module name="bananamanagerpojo" target="1.7" />
-    </bytecodeTargetLevel>
   </component>
 </project>
