@@ -10,13 +10,13 @@ public class Items {
     private Date createtime;
     private String detail;
 
-    public Items(Integer id, String name, Float price, Date createtime, String detail) {
-        this.id = id;
-        this.name = name;
-        this.price = price;
-        this.createtime = createtime;
-        this.detail = detail;
-    }
+//    public Items(Integer id, String name, Float price, Date createtime, String detail) {
+//        this.id = id;
+//        this.name = name;
+//        this.price = price;
+//        this.createtime = createtime;
+//        this.detail = detail;
+//    }
 
     public Integer getId() {
         return id;

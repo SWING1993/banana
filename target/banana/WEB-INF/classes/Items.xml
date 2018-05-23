@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<!--写sql语句-->
+<mapper namespace="com.banana.mapper.ItemsMapper">
+    <!--通过id查询一个用户-->
+
+    <insert id="insertItems" parameterType="Items">
+        insert into items(name,price,pic,createtime,detail) value (#{name},#{price},#{pic},#{createtime},#{detail})
+    </insert>
+
+    <delete id="deleteItemsById" parameterType="int">
+        delete from items where id = #{id}
+    </delete>
+
+    <select id="findItemsById" parameterType="int" resultType="Items">
+        select * from items where id = #{id}
+    </select>
+
+    <select id="findAllItems" resultType="Items">
+        select * from items
+    </select>
+
+
+
+    <delete id="deleteItemsByIds" parameterType="int[]">
+        delete from items where id in
+        <foreach collection="array" item="id" separator="," open="(" close=")">
+            #{id}
+        </foreach>
+
+    </delete>
+
+
+</mapper>
