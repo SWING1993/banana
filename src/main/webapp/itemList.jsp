@@ -13,7 +13,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>查询商品列表</title>
+    <title>查询商品列表2</title>
 </head>
 <body>
 <form action="${pageContext.request.contextPath }/itemlist.action" method="post">

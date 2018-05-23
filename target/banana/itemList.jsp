@@ -13,7 +13,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>222查询商品列表</title>
+    <title>查询商品列表2</title>
 </head>
 <body>
 <form action="${pageContext.request.contextPath }/itemlist.action" method="post">
@@ -23,9 +23,7 @@
             <td><input type="submit" value="查询"/></td>
         </tr>
     </table>
-</form>
-商品列表：
-<form action="${pageContext.request.contextPath }/deletes.action" method="post">
+    商品列表：
     <table width="100%" border=1>
         <tr>
             <td><input type="checkbox" name="ids" value=""/></td>
@@ -48,9 +46,7 @@
 
     </table>
     <input type="submit" value="删除">
-
 </form>
-
 </body>
 
 </html>

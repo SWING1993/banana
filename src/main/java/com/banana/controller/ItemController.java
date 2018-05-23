@@ -36,13 +36,16 @@ public class ItemController  {
 
         ApplicationContext ctx = new ClassPathXmlApplicationContext("ApplicationContext.xml");
         ItemsMapper mapper = (ItemsMapper) ctx.getBean(ItemsMapper.class);
-//        for (Integer id:ids) {
-//            System.out.println("idzzz"+id);
-//            mapper.deleteItemsById(id);
-//        }
         mapper.deleteItemsByIds(ids);
 
 
+        ModelAndView mav = new ModelAndView();
+        mav.setViewName("success.jsp");
+        return mav;
+    }
+
+    @RequestMapping(value = "/success.action")
+    public ModelAndView success() {
         ModelAndView mav = new ModelAndView();
         mav.setViewName("success.jsp");
         return mav;
